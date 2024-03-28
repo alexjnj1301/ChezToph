@@ -1,0 +1,32 @@
+.parallax-container {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+}
+
+.background-image {
+  background-image: url('../../../../assets/IMG/dent_parrachee.jpeg');
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  background-color: var(--image-filter);
+  padding: 20px;
+  box-sizing: border-box;
+}

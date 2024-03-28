@@ -5,7 +5,7 @@
     <mat-icon class="link" matTooltip="{{translateValues.tooltips?.share}}">launch</mat-icon>
     <button class="link" mat-button [matMenuTriggerFor]="selector" matTooltip="{{translateValues.tooltips?.lang}}">{{currentLangDisplay.toUpperCase()}}</button>
     <mat-menu #selector="matMenu">
-     <button mat-menu-item *ngFor="let lang of langSelector" (click)="changeLang(lang)">{{lang}}</button>
+     <button mat-menu-item *ngFor="let lang of langSelector" (click)="changeLang(lang)">{{lang.toUpperCase()}}</button>
     </mat-menu>
   </div>
 </mat-toolbar>
